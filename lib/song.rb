@@ -32,18 +32,19 @@ class Song
   end
 
   def self.artists
-  #   array = []
-  #   @@artists.each do |artist|
-  #     if array.include?(artist) == false
-  #       array.push(artist)
-  #     end
-  #     array
-  #   end
+    array = []
+    @@artists.each do |artist|
+      if array.include?(artist) == false
+        array.push(artist)
+      end
+      
+    end
   # end
 
 
   # puts "artists method"
-  @@artists
+  # @@artists
+  array
   end
 end
 
