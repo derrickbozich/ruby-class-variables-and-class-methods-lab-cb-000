@@ -21,14 +21,19 @@ class Song
   end
 
   def self.genres
-    # array = []
-    # @@genres.each do |genre|
-    #   if array.include?(genre) == false
-    #     array.push(genre)
-    #   end
-    #   array
-    # end
-    @@genres
+    array = []
+    @@genres.each do |genre|
+      if array.include?(genre) == false
+        array.push(genre)
+      end
+
+    end
+  # end
+
+
+  # puts "artists method"
+  # @@artists
+  array
   end
 
   def self.artists
