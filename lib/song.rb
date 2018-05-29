@@ -37,7 +37,7 @@ class Song
       if array.include?(artist) == false
         array.push(artist)
       end
-      
+
     end
   # end
 
