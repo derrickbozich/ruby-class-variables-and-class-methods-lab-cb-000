@@ -41,8 +41,8 @@ class Song
   #   end
   # end
 
-  
-  puts "artists method"
+
+  # puts "artists method"
   @@artists
   end
 end
