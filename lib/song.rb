@@ -26,13 +26,7 @@ class Song
       if array.include?(genre) == false
         array.push(genre)
       end
-
     end
-  # end
-
-
-  # puts "artists method"
-  # @@artists
   array
   end
 
@@ -42,15 +36,16 @@ class Song
       if array.include?(artist) == false
         array.push(artist)
       end
-
     end
-  # end
-
-
-  # puts "artists method"
-  # @@artists
-  array
   end
+
+  def self.genre_count
+    # hash = {}
+    genres = self.genres
+    genres
+    
+  end
+  
 end
 
 
