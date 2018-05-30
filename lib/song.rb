@@ -40,12 +40,26 @@ class Song
   end
 
   def self.genre_count
-    # hash = {}
+    hash = {}
     genres = self.genres
-    genres
+    genres.each do |genre|
+      
+      @@genres.each do |element|
+        if genre == element
+          if hash.keys.include?(genre) == false
+            hash[genre] = [0]
+          end
+          hash[genre][0]+=1
+          
+        end
+        
+      end
+    end
     
+    
+
   end
-  
+
 end
 
 
