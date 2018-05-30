@@ -46,10 +46,10 @@ class Song
 
       @@genres.each do |element|
         if genre == element
-          if hash.keys.include?(genre) == false
-            hash[genre] = [0]
-          end
-          hash[genre][0]+=1
+            if hash.keys.include?(genre) == false
+              hash[genre] = 0
+            end
+          hash[genre]+=1
 
         end
 
@@ -67,3 +67,4 @@ Song.new("Lucifer", "Jay-Z", "rap" )
 Song.new("99 Problems", "Jay-Z", "rap")
 Song.new("hit me baby one more time", "Brittany Spears", "pop")
 Song.genre_count
+# hash["pop"]=0
